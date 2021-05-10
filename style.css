@@ -323,13 +323,12 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
-    float: right;
+    margin-right: 6rem; /*pour la version desktop, repositionnement de accueil et page 2 dans la menu pour pouvoir cliquer sur page 2.*/
     z-index: 1;
 }
 
+/*Suppression du float left pour permettre à accueil et page 2 de se positionner l'un en dessous de l'autre*/
 .nav > li {
-    float: left;
     margin-top: 4px;
     font-size: 16px;
 }
@@ -781,7 +780,7 @@ h4 {
 }
 
 .tc-white {
-    color: #ff8300!important;
+    color: white!important; /*Changement de la couleur du H1 la chouette agence et H2 en bas de page*/
 }
 
 .btn-atomic-tangerine {
@@ -1031,6 +1030,10 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    /*Pour la partie mobile, redimensionnement de l'image avec texte*/
+    .row img {
+        max-width: 100%;
     }
 }
 
